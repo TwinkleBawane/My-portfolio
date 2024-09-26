@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Star Cosmetics</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-page {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            font-size: 2.5em;
+            color: #B8906D;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-size: 1.8em;
+            color: #4B0082;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            transition: border 0.3s;
+        }
+        input:focus, textarea:focus {
+            border: 1px solid #B8906D;
+            outline: none;
+        }
+        .submit-btn {
+            background-color: #B8906D;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #4B0082;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <h1>Star Cosmetics</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lipsticks.html">Lipsticks</a></li>
+                <li><a href="eyeshadows.html">Eyeshadows</a></li>
+                <li><a href="mascara.html">Mascara</a></li>
+                <li><a href="kajal.html">Kajal</a></li>
+                <li><a href="shimmer.html">Shimmer Palette</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Us Page Content -->
+    <section class="contact-page">
+        <h2 class="section-title">Contact Us</h2>
+        
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>If you have any questions, feedback, or inquiries, feel free to reach out to us. We value your feedback and are here to assist you!</p>
+            <p><strong>Email:</strong> support@starcosmetics.com</p>
+            <p><strong>Phone:</strong> +1 (234) 567-890</p>
+            <p><strong>Address:</strong> xyz complex</p>
+        </div>
+
+        <h3>Send Us a Message</h3>
+        <form action="submit_form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Star Cosmetics. All Rights Reserved.
+            <br>
+        This site is made just for the practise</p>
+    </footer>
+
+    <!-- Script Section -->
+    <script src="script.js"></script>
+</body>
+</html>
